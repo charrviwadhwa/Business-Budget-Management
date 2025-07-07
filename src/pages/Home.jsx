@@ -13,7 +13,7 @@ export default function Home() {
       
 <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-4xl backdrop-blur-lg bg-white/50 border border-white/30 rounded-full px-8 py-3 shadow-md flex justify-between items-center">
   {/* Logo */}
-  <h1 className="text-xl font-bold text-[#4EC28F]">BizBud</h1>
+  <h1 className="text-xl font-bold text-[#4EC28F]">BudgeWise</h1>
 
   {/* Links */}
   <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-800">
