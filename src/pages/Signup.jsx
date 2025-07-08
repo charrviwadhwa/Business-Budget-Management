@@ -6,10 +6,10 @@ export default function Signup() {
     <div className="min-h-screen bg-[#F1FCF7] flex items-center justify-center px-4">
       <div className="backdrop-blur-xl bg-white/50 border border-white/30 rounded-3xl shadow-lg p-8 md:p-12 w-full max-w-md text-center">
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">Create Account</h2>
-        <p className="text-sm text-gray-500 mb-6">Sign up to get started with BizBud</p>
+        <p className="text-sm text-gray-500 mb-6">Sign up to get started with BudgeWise</p>
 
         <form className="flex flex-col gap-4 text-left">
-          {/* Name */}
+          
           <label className="text-sm font-medium text-gray-700">Name</label>
           <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 bg-white/80">
             <User className="w-4 h-4 text-gray-400 mr-2" />
@@ -20,7 +20,7 @@ export default function Signup() {
             />
           </div>
 
-          {/* Email */}
+         
           <label className="text-sm font-medium text-gray-700">Email</label>
           <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 bg-white/80">
             <Mail className="w-4 h-4 text-gray-400 mr-2" />
@@ -31,7 +31,7 @@ export default function Signup() {
             />
           </div>
 
-          {/* Password */}
+          
           <label className="text-sm font-medium text-gray-700">Password</label>
           <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 bg-white/80">
             <Lock className="w-4 h-4 text-gray-400 mr-2" />

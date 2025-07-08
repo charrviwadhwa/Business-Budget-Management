@@ -6,16 +6,16 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-[#F1FCF7] font-sans text-gray-900 overflow-hidden">
 
-      {/* 🔵 Dot Grid Background */}
+    
       <div className="absolute inset-0 bg-[radial-gradient(#4EC28F_1px,transparent_1px)] [background-size:24px_24px] opacity-60 z-0 animate-[fadeIn_2s_ease-out]" />
 
-      {/* 🌫️ Hubble-Style Glass Navbar */}
+     
       
 <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-4xl backdrop-blur-lg bg-white/50 border border-white/30 rounded-full px-8 py-3 shadow-md flex justify-between items-center">
-  {/* Logo */}
+
   <h1 className="text-xl font-bold text-[#4EC28F]">BudgeWise</h1>
 
-  {/* Links */}
+
   <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-800">
     <Link href="/services" className="hover:text-[#4EC28F] transition">Services</Link>
     <a href="/about" className="hover:text-[#4EC28F] transition">About</a>
@@ -23,9 +23,9 @@ export default function Home() {
     <a href="/FAQ" className="hover:text-[#4EC28F] transition">FAQ</a>
   </nav>
 
-  {/* Sign In Button */}
+ 
   <div className="flex gap-2">
-  <Link to="/signup" className="text-sm font-medium border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-100 transition">Sign up</Link>
+  {/* <Link to="/signup" className="text-sm font-medium border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-100 transition">Sign up</Link> */}
 <Link to="/login" className="text-sm font-medium border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-100 transition">Log in</Link>
 </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
 </header>
 
 
-      {/* 🧠 Hero Section */}
+      
       <section className="relative z-10 flex flex-col items-center text-center px-6 md:px-32 py-20 animate-[fadeUp_0.6s_ease-out] pt-36 pb-20 ">
         <h2 className="text-4xl md:text-5xl font-bold leading-tight max-w-3xl mb-4 font-[Playfair]">
           Unlock the potential of<br />budget management now
@@ -43,11 +43,11 @@ export default function Home() {
         </p>
       </section>
 
-      {/* ✅ Feature Section */}
+      
       <section className="relative z-10 px-6 md:px-16 py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           
-          {/* Left Text */}
+         
           <div>
             <p className="text-xs tracking-wide text-gray-500 uppercase mb-2">What we do?</p>
             <h2 className="text-3xl font-semibold mb-4 text-gray-900 leading-tight">
@@ -61,7 +61,7 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Right Feature Cards */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <FeatureCard icon={<NotebookPen size={28} />} title="Budget Planning" desc="Create yearly or quarterly financial plans with ease and accuracy." />
             <FeatureCard icon={<MonitorSmartphone size={28} />} title="Spend Tracking" desc="Monitor department-wise expenditure and stay within limits." />
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 💅 Tailwind Animations */}
+     
       <style>{`
         @keyframes fadeUp {
           0% { opacity: 0; transform: translateY(20px); }
