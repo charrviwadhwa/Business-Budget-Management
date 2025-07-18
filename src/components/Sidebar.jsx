@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const navItems = [
   { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
-  { name: 'Departments', path: '/departments', icon: Users },
+  { name: 'Departments', path: '/department', icon: Users },
   { name: 'Approvals', path: '/approvals', icon: FileText },
   { name: 'Reports', path: '/reports', icon: BarChart2 },
   { name: 'Settings', path: '/settings', icon: Settings },
