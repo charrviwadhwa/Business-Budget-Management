@@ -55,6 +55,7 @@ const StatCard = ({ title, value }) => (
   </div>
 );
 
+
 export default function Dashboard() {
   return (
      <div className="flex">
