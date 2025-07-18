@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 import { Doughnut, Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -58,6 +59,9 @@ export default function Dashboard() {
   return (
      <div className="flex">
       <Sidebar />
+      <div className="flex-1"/>
+        {/* Navbar on the top */}
+        <Navbar />
     <div className="ml-64 min-h-screen w-[calc(100vw-16rem)] bg-[#F1FCF7] p-6 overflow-x-hidden">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Budget Overview</h1>
 
