@@ -16,6 +16,7 @@ export default function Navbar() {
             <p className="text-gray-500 text-xs">charvi@email.com</p>
           </div>
         </div>
+        
       </div>
     </header>
   );
