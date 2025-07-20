@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import { Doughnut, Line } from "react-chartjs-2";
+import { useState } from "react";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -48,6 +49,9 @@ const lineData = {
   ],
 };
 
+
+
+
 const StatCard = ({ title, value }) => (
   <div className="bg-white shadow rounded-lg p-4 text-center">
     <h3 className="text-sm text-gray-500">{title}</h3>
@@ -57,13 +61,17 @@ const StatCard = ({ title, value }) => (
 
 
 export default function Dashboard() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   return (
-     <div className="flex">
-      <Sidebar />
-      <div className="flex-1"/>
-        {/* Navbar on the top */}
-        <Navbar />
-    <div className="ml-64 min-h-screen w-[calc(100vw-16rem)] bg-[#F1FCF7] p-6 overflow-x-hidden">
+    <div className="flex">
+      <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+        <div
+          className={`transition-all duration-300 min-h-screen bg-[#F1FCF7] p-6 overflow-x-hidden ${
+            sidebarOpen ? "ml-64 w-[calc(100vw-16rem)]" : "ml-16 w-[calc(100vw-4rem)]"
+          }`}
+        >
+
+
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Budget Overview</h1>
 
       {/* Stat Cards */}
@@ -123,5 +131,6 @@ export default function Dashboard() {
       </div>
     </div>
     </div>
+   
   );
 }

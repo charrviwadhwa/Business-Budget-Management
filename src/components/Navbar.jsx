@@ -1,23 +1,20 @@
-export default function Navbar() {
+import { Menu } from 'lucide-react';
+
+export default function Navbar({ isSidebarOpen, toggleSidebar }) {
   return (
-    <header className="fixed top-0 left-64 right-0 h-16 bg-white shadow flex items-center justify-end px-6 z-30">
-      <div className="flex items-center gap-4">
-        <button className="text-gray-500 hover:text-gray-700">
-          🔔
+    <header
+      className={`flex items-center gap-4 bg-[#F1FCF7] h-16 px-6 sticky top-0 z-10 transition-all duration-300 ${
+        isSidebarOpen ? 'ml-64 w-[calc(100vw-16rem)]' : 'ml-16 w-[calc(100vw-4rem)]'
+      }`}
+    >
+      {/* Only show hamburger when sidebar is closed */}
+      {!isSidebarOpen && (
+        <button onClick={toggleSidebar} className="text-gray-600 hover:text-[#4EC28F]">
+          <Menu size={24} />
         </button>
-        <div className="flex items-center gap-2">
-          <img
-            src="https://i.pravatar.cc/40"
-            alt="profile"
-            className="w-8 h-8 rounded-full"
-          />
-          <div className="text-sm">
-            <p className="font-semibold">Charvi Wadhwa</p>
-            <p className="text-gray-500 text-xs">charvi@email.com</p>
-          </div>
-        </div>
-        
-      </div>
+      )}
+
+      <h1 className="text-xl font-bold text-gray-800">Budget Overview</h1>
     </header>
   );
 }
