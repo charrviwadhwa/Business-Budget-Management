@@ -7,7 +7,7 @@ export default function Navbar({ isSidebarOpen, toggleSidebar }) {
         isSidebarOpen ? 'ml-64 w-[calc(100vw-16rem)]' : 'ml-16 w-[calc(100vw-4rem)]'
       }`}
     >
-      {/* Only show hamburger when sidebar is closed */}
+      {/* Hamburger only when sidebar is closed */}
       {!isSidebarOpen && (
         <button onClick={toggleSidebar} className="text-gray-600 hover:text-[#4EC28F]">
           <Menu size={24} />
