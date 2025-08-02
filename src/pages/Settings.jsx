@@ -4,8 +4,8 @@ import { useState } from "react";
 export default function Settings() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [formData, setFormData] = useState({
-    name: "Charvi Wadhwa",
-    email: "charvi@example.com",
+    name: "Admin",
+    email: "admin@example.com",
     department: "Finance",
   });
 
